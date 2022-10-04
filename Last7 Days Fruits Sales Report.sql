@@ -1,9 +1,9 @@
 Select   Cast(dbo.ToBdt(s.ReconciledOn) as date) [Date]
-		,pv.Id [PVID]
-		,pv.Name [Product]
-		,Count(tr.SalePrice) [SaleQty]
-		,Sum(tr.SalePrice) [Price]
-		,Sum(pv.Weight) / 1000 [Weight/Ton]
+		,pv.Id 									 [PVID]
+		,pv.Name 								 [Product]
+		,Count(tr.SalePrice) 					 [SaleQty]
+		,Sum(tr.SalePrice) 						 [Price]
+		,Sum(pv.Weight) / 1000 	                 [Weight/Ton]
 
 
 From ThingRequest tr 
